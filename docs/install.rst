@@ -62,6 +62,7 @@ for deployment (Nginx, uWSGI and Supervisord)::
     sudo apt-get install python
     sudo apt-get install python-virtualenv
     sudo apt-get install python-dev
+    sudo apt-get install uwsgi-plugin-python
 
 
 Chances are that some if not all of those things are on your system already.
@@ -101,6 +102,11 @@ not worry, just let it run its course.
 If anything goes wrong -- say you did not have some library installed -- you
 can correct the problem and run the `pip install vaultier` command again
 without any consequences.
+
+The mock version might need to be downgraded
+
+   pip uninstall mock
+   pip install mock==1.1.0
 
 When everything is ready, you need to update your environment for the setup
 like so::
