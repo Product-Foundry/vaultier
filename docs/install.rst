@@ -103,7 +103,7 @@ If anything goes wrong -- say you did not have some library installed -- you
 can correct the problem and run the `pip install vaultier` command again
 without any consequences.
 
-The mock version might need to be downgraded
+The mock version might need to be downgraded::
 
     pip uninstall mock
     pip install mock==1.1.0
